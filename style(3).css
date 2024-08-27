@@ -43,7 +43,51 @@
     width: 100%; 
     display: block; 
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 10;
+    padding: 10;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
 
+.container {
+    display: flex;
+    gap: 7px; 
+    flex-wrap: wrap; 
+}
+
+
+.card {
+    background-color: white;
+    border: 0px solid #ddd;
+    border-radius: 0px; 
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    flex: 1; 
+    max-width: 300px; 
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #474343;
+    size-adjust: 50px;
+}
+
+
+.card p {
+    color: #666;
+    font-size: 1.0em;
+}
 
 img{
     margin: 10px;
@@ -74,6 +118,7 @@ ul{
     color: rgb(112, 111, 111);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 footer{
     background-color: #9bcbb8;
     color:white;
@@ -85,7 +130,7 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     padding: 0 20px;
 }
