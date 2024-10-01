@@ -106,13 +106,46 @@ h2{
     color: rgb(112, 111, 111);
     
 }
-nav{
-    color:rgb(112, 111, 111);
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.button {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(92, 172, 144);
+  border: 2px solid rgb(99, 169, 128);
+  border-radius: 34px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
 }
-ul{
-    color: rgb(112, 111, 111);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+.button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(132, 193, 163);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+  scale: 3;
+}
+
+.button:hover {
+  color: #212121;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button:active {
+  scale: 1;
 }
 
 footer{
@@ -189,3 +222,237 @@ footer{
 .footer-bottom p{
     margin: 0;
 }
+.form {
+    --bg-light: #efefef;
+    --bg-dark: #211a1a;
+    --clr: #2e5940;
+    --clr-alpha: #c9c2c260;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 200%;
+    max-width: 300px;
+  }
+  
+  .form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .form input[type="email"],
+  .form input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+  }
+  
+  .form input[type="email"]:focus,
+  .form input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+  }
+  
+  .label {
+    align-self: flex-start;
+    color: var(--clr);
+    font-weight: 600;
+  }
+  
+  .form .submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+  }
+  
+  .span {
+    text-decoration: none;
+    color: var(--bg-dark);
+  }
+  
+  .span a {
+    color: var(--clr);
+  }
+  
+  footer{
+      background-color: #7bae9a;
+      color:white;
+      padding: 40px 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .footer-container{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 120px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    .footer-section{
+      flex-basis: 23%;
+      margin-bottom: 20px;
+    }
+    
+    .footer-section h4{
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #393131;
+    }
+    
+    .footer-section p, .footer-section ul{
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    
+    .footer-section ul{
+      list-style-type: none;
+    }
+    
+    .footer-section ul li{
+      margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a{
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-section ul li a:hover{
+      color: #4d4141;
+    }
+    
+    .social-links a{
+      display: inline-block;
+      margin-right: 10px;
+      color: rgb(71, 120, 75);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .social-links a:hover{
+      color: #405a3e;
+    }
+    
+    .footer-bottom{
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px 0;
+      border-top: 1px solid #6c9379;
+      font-size: 14px;
+    }
+    
+    .footer-bottom p{
+      margin: 0;
+    }
+    .wrapper {
+      display: inline-flex;
+      list-style: none;
+      height: 120px;
+      width: 100%;
+      padding-top: 40px;
+      font-family: "Poppins", sans-serif;
+      justify-content: center;
+    }
+    
+    .wrapper .icon {
+      position: relative;
+      background: #fff;
+      border-radius: 50%;
+      margin: 10px;
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .tooltip {
+      position: absolute;
+      top: 0;
+      font-size: 14px;
+      background: #fff;
+      color: #1d1c1c;
+      padding: 5px 8px;
+      border-radius: 5px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .tooltip::before {
+      position: absolute;
+      content: "";
+      height: 8px;
+      width: 8px;
+      background: #fff;
+      bottom: -3px;
+      left: 50%;
+      transform: translate(-50%) rotate(45deg);
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    
+    .wrapper .icon:hover .tooltip {
+      top: -45px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    
+    .wrapper .icon:hover span,
+    .wrapper .icon:hover .tooltip {
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+    
+    .wrapper .facebook:hover,
+    .wrapper .facebook:hover .tooltip,
+    .wrapper .facebook:hover .tooltip::before {
+      background: #346657;
+      color: #fffcfc;
+    }
+    
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before {
+      background: #346657;
+      color: #fff;
+    }
+    
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before {
+      background: #346657;
+      color: #fff;
+    }
+  

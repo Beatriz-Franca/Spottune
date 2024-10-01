@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+   <style>
+
+   </style> 
+</head>
+<body>
+  <div class="flex items-center gap-2">
+    <button class="button">
+      <a style="color: black;" href="login.html">Login</a>
+    </button>
+
+     <button class="button">
+     <a style="color: black;" href="grid.html">Códigos de Músicas</a>
+    </button>
+
+    <button class="button">
+      <a style="color: black;" href="curiosidades.html">Curiosidades</a>
+    </button>
+
+    <button class="button">
+      <a style="color: black;" href="assinaturas.html">Assinaturas</a>
+    </button>
+
+    <button class="button">
+      <a style="color: black;" href="index.html">Voltar</a>
+    </button>
+    
+    <form action="/action_page.php">
+        <div class="container">
+          <h1>Cadastro</h1>
+          <p>Por favor, preencha os campos para completar seu cadastro.</p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Digite seu email" name="email" id="email" required>
+      
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Digite sua senha" name="psw" id="psw" required>
+      
+          <label for="psw-repeat"><b>Repita sua senha</b></label>
+          <input type="password" placeholder="Repita sua senha" name="psw-repeat" id="psw-repeat" required>
+          <hr>
+          <p>Criando sua conta, você concorda com nossos termos e políticas. <a href="#">Termos & Políticas</a>.</p>
+      
+          <button type="submit" class="registerbtn">Cadastrar</button>
+        </div>
+        
+        <div class="container signin">
+          <p>Já tem uma conta? <a href="login.html">Faça o login</a>.</p>
+        </div>
+      </form>
+      <link rel="stylesheet" href="cadastro.css">
+</body>
+</html>

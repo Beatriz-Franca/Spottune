@@ -1,8 +1,10 @@
-.container {
-    display:block;
-    gap: 0px; 
-}
-.button {
+body {
+    background-image: url('background site.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  .button {
     cursor: pointer;
     position: relative;
     padding: 10px 24px;
@@ -44,53 +46,6 @@
     scale: 1;
   }
 
-
-.card {
-    background-color:none;
-    border: 0px solid #ddd;
-    border-radius: 0px; 
-    padding: 7px;
-    box-shadow: 0 2px 5px rgb(99, 148, 122); 
-    flex: 5; 
-    max-width: 400px; 
-
-}
-
-.card h2 {
-    margin-top: 0;
-    font-size: 1.5em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #474343;
-    size-adjust: 50px;
-}
-
-
-.card p {
-    color: #666;
-    font-size: 1.0em;
-}
-
-img{
-    margin: 10px;
-    width: 250px;
-    height: 250px;
-    border-radius: 300px;
-}
-hr{
-    color: rgb(101, 101, 101);
-}
-h1{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(112, 111, 111);
-
-}
-h2{
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgb(112, 111, 111);
-    
-}
 footer{
     background-color: #9bcbb8;
     color:white;
@@ -115,7 +70,7 @@ footer{
 .footer-section h4{
     margin-bottom: 15px;
     font-size: 18px;
-    color: #76a594;
+    color: #4d4141;
 }
 
 .footer-section p, .footer-section ul{
@@ -139,7 +94,7 @@ footer{
 }
 
 .footer-section ul li a:hover{
-    color: #7caf9b;
+    color: #4d4141;
 }
 
 .social-links a{
@@ -158,14 +113,76 @@ footer{
     text-align: center;
     margin-top: 20px;
     padding: 10px 0;
-    border-top: 1px solid #83c1ad;
+    border-top: 1px solid #69776d;
     font-size: 14px;
 }
 
 .footer-bottom p{
     margin: 0;
 }
-.social-links a{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+  .social-links a{
     display: inline-block;
     margin-right: 10px;
     color: rgb(71, 120, 75);
